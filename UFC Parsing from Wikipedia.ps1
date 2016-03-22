@@ -22,7 +22,7 @@ function Parse-CardData
 	
 	<################################## Card Date Parsing########################################################>
 	
-	$Card.Date = ([regex]::matches($Card.Date, "(?:sortkey`">0)(.+?)(?:-0000)")).groups[1].value
+	$Card.Date = ([regex]::matches($Card.Date, "(?:white-space:nowrap`">)(.+?)(?:</span>)")).groups[1].value
 	
 	<################################## Card Venue Parsing#######################################################>
 	
